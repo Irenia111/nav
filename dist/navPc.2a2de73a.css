@@ -1,0 +1,194 @@
+/* reset 默认css*/
+*{box-sizing: border-box;margin: 0px;padding: 0px;}
+*:before, *:after{box-sizing: border-box;}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none; color: xxx;
+}
+
+/* 清除列表样式 */
+ul,ol{list-style: none;}
+input,button{background:none;outline:none;border:0px;}
+
+.clearfix:after{ 
+    content:"";
+    display:block;
+    clear:both;
+}
+/* nav样式 */
+html{height:100%;}
+body{background: linear-gradient(180deg, #F5F7FA 25%, rgb(195, 207, 226) 100%);height:100%;}
+
+/* 鼠标样式*/
+div{cursor: default;}
+
+.siteBody{padding:53px 200px 35px 200px;}
+.wrapBox{
+    margin-bottom: 20px;
+    padding:10px 25px 20px 25px;
+    background: #F5F7FA;
+    border-radius: 20px;
+    box-shadow: 0 0 0 rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.05), 0 3px 6px rgba(249,103,103,.05);
+}
+
+.searchTopWapper{margin-left: 40px;}
+
+.searchBox{margin-bottom: 25px;}
+.searchTopWapper .current{color:#4C5057;font-size:15px;float:left;background: #FFFEFF;
+    box-shadow: 10px 20px 0 0#FFFEFF,-10px 20px 0 0 #FFFEFF;border-radius: 5px 5px 0 0;
+    padding:5px 15px;border:1px black;position: relative;margin-right: 16px;
+}
+.searchValue:hover{color:#4068A7;font-size:15px;float:left;background:rgba(255, 255, 2555, 0.6);
+    border-radius: 5px 5px 0 0;
+    padding:5px 15px;border:1px black;position: relative;margin-right: 16px;
+}
+.searchValue{color:#4068A7;font-size:15px;float:left;background:#F5F7FA;
+    /*box-shadow: 10px 20px 0 0#F5F7FA,-10px 20px 0 0 #F5F7FA;*/border-radius: 5px 5px 0 0;
+    padding:5px 15px;border:1px black;position: relative;margin-right: 16px;
+}
+.searchTopWapper .current::before{ 
+position:absolute;
+/* content:"\200B";。其实之前的再谈清除浮动 里也已经提到，这个 U+200B 字符是一个“零宽度空白”，其本身就不可见，所以也就不需要在使用 visibility:hidden; 来隐藏内容。*/
+content:"";
+background-color:#F5F7FA;
+width:12px;
+height:12px;
+border-radius: 0 0 5px 0;
+left:-12px;
+bottom:0px;
+    }
+.searchTopWapper .current::after{
+position:absolute;
+content:"";
+background-color:#F5F7FA;
+width:12px;
+height:12px;
+border-radius: 0 0 0 5px;
+right:-12px;
+bottom:0px;
+}
+.searchTopWapper .current .index1{color:#242ED7}
+.searchTopWapper .current .index2{ 
+    background: linear-gradient(to right, #4285f4 12%, #EA4335 35%,  #FBBC05 65%,#44A759 100%);
+    background-clip: text;
+    color: transparent;}
+.searchTopWapper .current .index3{color:#51C332}
+.searchTopWapper .current .index4{color:#0084ff}
+.searchTopWapper .current .index5{color:#00A1D6}
+
+.searchBox > input{background: #FFFEFF;border-radius: 30px;float:left;height:53px;width:90%;padding-left: 25px;font-size: 12px;}
+.searchBox > button{margin-left:10px;white-space: nowrap;float:right;font-size:18px;height:53px;padding:10px 12px;background: #9FBCE9;border-radius: 50px;color:#FFFFFF;}
+.searchBox > button:hover{color:rgba(245, 246, 248, 0.945);}
+
+.wrapBoxContent{color:#4C5057;margin:5px 0px;font-size:16px;}
+
+.linkListWapper{display:flex;flex-wrap:wrap;align-content: flex-start;margin-right: -10px;}
+
+
+.link .remove {opacity: 0;}/*{opacity: 0;}*/
+.link .remove:hover{opacity: 1;}
+.link .remove .re1,.link .remove .re2{
+    position: absolute;  /*方便进行定位*/
+    height: 8px;
+    width: 2px;
+    top: 8px;
+    right: 9px; 
+   background: #4C5057;}
+
+   .link .remove .re1{
+    transform: rotate(45deg);  /*进行旋转*/
+  }
+  .link .remove .re2{
+    transform: rotate(-45deg);
+  }
+.link{height:100px;  background: #F5F7FA;margin: 3px 10px 8px 0px;flex: 0 0 13%;border-radius: 8px;position: relative;}
+/*这里使用flex的流式布局，margin是调出来的*/
+.linkWrapper{display: flex;flex-direction: column;justify-content: center;align-items: center;padding:4px 0px 4px 0px;}
+.linkLogo{ height:50px;width: 50px;border-radius: 50%;
+    background:#E2E3E5;
+    margin: 18px auto 0px auto;
+    color:#4068A7;font-size: 30px;
+    text-align: center;vertical-align: middle;
+    /*为啥这里加了这个，就自己垂直居中了呢？？？？？*/
+    display: flex;flex-direction: column;justify-content: center;align-items: center;
+}
+.linkName{margin-top: 10px;font-size: 10px;color:#4068A7;}
+
+.link:hover{background:#E2E3E5;}
+.link:hover .linkLogo{ 
+    height:80px;width: 80px;
+    margin: 10px auto 0px auto;
+    font-weight: 500;
+    font-size: 60px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+
+
+.link:hover .linkName{visibility:hidden;}
+
+
+.addFav{ height:100px; background: #F5F7FA;margin: 3px 10px 8px 0px;flex: 0 0 13%;border-radius: 8px;}
+.addWrapper{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.addLogo{
+    height:50px;width: 50px;border-radius: 50%;
+    background:#E2E3E5;
+    margin: 20px auto;
+    color:#F5F7FA;font-size: 20px;
+    text-align: center;vertical-align: middle;
+    /*为啥这里加了这个，就自己垂直居中了呢？？？？？*/
+    display: flex;flex-direction: column;justify-content: center;align-items: center;
+}
+
+.addLogo > .icon{
+    height:30px; width: 30px;
+    margin-top:1px;
+    color:#4068A7;
+}
+.addFav:hover{background:#E2E3E5}
+.addFav:hover .addLogo{height:70px;width: 70px;border-radius: 50%;
+    margin: 15px auto;}
+
+.addFav:hover .addLogo >.icon{
+    height:60px; width: 60px;
+    margin-top:1px;
+    fill: url(#my-cool-gradient) #ff512f;  
+}
+
+
+.navTabsWarpper .current{color:#4068A7;border-bottom:2px solid #4068A7;}
+.navTab:hover{color:rgba(64,104,167,0.8);font-size: 14px;float:left;margin: 3px 10px 3px 0px;padding:0px 3px;} 
+
+.navTab{color:#4C5057;font-size: 14px;float:left;margin: 3px 10px 3px 0px;padding:0px 3px;} 
+/*这里使用float布局，平均布局好做一些 但是不会随页面调整*/
+/*.navContent{margin-right:-10px; display: none;}
+.navContentBox{width:130px;height:50px; background: yellow;float: left;margin:0px 10px 5px 0px;border-radius: 4px;}
+*/
+.navList{margin-top: 2px;}
+.navContent{margin-right:-10px; display:flex;flex-wrap:wrap;align-content: flex-start;}
+.navContent{display:none;}
+
+.navContentBox{flex: 0 0 16%;;height:50px; background: #F5F7FA;
+    box-shadow: 0 0 0 rgba(0,0,0,.05), 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0,0,0,.05);
+    margin:0px 3px 3px 0px;border-radius: 4px;
+    padding:8px 6px;overflow: hidden;}
+.navContentBox:hover{transform: scale(1.08);
+    background-color:rgba(245, 246, 248, 0.945);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);}
+.navContentBox .ln{
+    margin:20px 0px 10px 0px;
+    font-size:12px;
+    color:#4068A7;}
+.navContentBox .ld{
+    font-size:7px;
+    color:#91959D;
+}
+.navContentBox:hover .ln,.navContentBox:hover .ld{
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/*# sourceMappingURL=navPc.2a2de73a.css.map */
