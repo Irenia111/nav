@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <!--从淘宝复制来的viewport，不支持双指缩放-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Personal Nav</title>
+        <!--icon-->
+        <style type="text/css">
+            .icon {
+               width: 1em; height: 1em;
+               vertical-align: -0.15em;
+               fill: currentColor;
+               overflow: hidden;
+            }
+        </style>
+        <link rel="stylesheet"  media="screen and (min-width:900px)" type="text/css" href="navPc.css">
+        <link rel="stylesheet" media="screen and (max-width:900px)" type="text/css" href="navMobile.css">
+        
+
+    </head>
+    <body>
+        <main class="siteBody">
+            <div class="search clearfix">
+                    <ul class="searchTopWapper clearfix">
+                        <li class="searchValue current"><span class="index1">百度</span></li>
+                        <li class="searchValue"><span class="index2">谷歌</span></li>
+                        <li class="searchValue"><span class="index3">微信</span></li>
+                        <li class="searchValue"><span class="index4">知乎</span></li>
+                        <li class="searchValue"><span class="index5">B站</span></li>
+                    </ul>
+                <form class="searchBox clearfix" method="get" target="_black" action="http://www.baidu.com/s">
+                    <input name="wd" type="text">
+                    <button type="submit">搜 索</button>
+                </form>
+            </div>
+            <div class="wrapBox favList">
+                <div class="wrapBoxContent">常用网站</div>
+                    <ul class="linkListWapper">
+
+                        <!--
+                            <li class="link" data-index="0"><div class="remove"><div class="re1"></div><div class="re2"></div></div>
+                            <a href="" target="_black" class="linkWrapper"><div class="linkLogo">assss</div><div class="linkName">xxxx</div></a></li>
+                        -->
+                            <li class="addFav"><div class="addWrapper"><div class="addLogo"><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-zengjia1"></use>
+                        </svg></div></div></li>
+                    </ul>
+            </div>
+            <div class="wrapBox clearfix">
+                <div class="wrapBoxContent">导航链接</div>
+                <div class="navTabsWarpper clearfix">
+                    <div class="navTab current">学习资源</div>
+                    <div class="navTab ">前端导航</div>
+                    <div class="navTab ">设计导航</div>
+                </div>
+                <div class="navList">
+                <div class="navContent" style="display: flex;">
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.dxzy163.com/">大学资源网</a><div class="ld">完全免费的学习课程资源</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.class.cn/index/open">好课网</a><div class="ld">国内外知名高校开放课程</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.icourses.cn/home/" >爱课程</a><div class="ld">视频公开课</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://www.yxgapp.com/open-courses/">译学馆</a><div class="ld">译学馆：公开课</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://crashcourse.club/category/">Crash Course</a><div class="ld">专业快速的入门课程</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.coursade.com/">Coursade</a><div class="ld">公开课搜索引擎</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://www.51zxw.net/">我要自学网</a><div class="ld">免费视频教程</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://oeasy.org/">oeasy</a><div class="ld">综合教程学习</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://aotu.jd.com/share/">凹凸公开课</a><div class="ld">前端知识分享沉淀平台</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://freecodecamp.cn">FreeCodeCamp</a><div class="ld">开启你的软件工程师生涯</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://jspang.com/posts/2017/01/11/all-video-list.html">技术胖</a><div class="ld">博客免费前端视频目录</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://tutorialzine.com/">tutorialzine</a><div class="ld">EN)高质量前端教程和文章库</div></div>
+                </div>
+                <div class="navContent clearfix">
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.alloyteam.com/nav/" >Web前端导航</a><div class="ld">AlloyTeam</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.daqianduan.com/nav">前端网址导航</a><div class="ld">大前端</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.h-ui.net/site.shtml" title="">IT网址导航</a><div class="ld">H-ui框架</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.fenav.com/" title="">前端导航</a><div class="ld">F2E</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://f2er.club/" title="">醉牛前端</a><div class="ld">前端平台</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.chuangzaoshi.com/code" title="">前端导航</a><div class="ld">创造狮</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://ailongmiao.com/web/" title="">前端导航</a><div class="ld">龙喵网</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://w3ctech.com/" title="">w3ctech</a><div class="ld">中国最大的前端技术社区</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.daqianduan.com/">大前端</a><div class="ld">帮助前端爱好者自我提升</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.html5dw.com/" title="">HTML5梦工厂</a><div class="ld">HTML5梦工厂 助力HTML5发展</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://pm265.com/" title="">产品经理导航</a><div class="ld">PM265产品经理导航</div></div>                    
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://www.sojson.com/" title="">So JSON在线</a><div class="ld">各类前端小工具</div></div>                    
+                    
+                </div>
+                <div class="navContent clearfix">
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://hao.shejidaren.com/">Web/UI设计导航</a><div class="ld">设计师网址导航</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://dexlist.page/">DEX导航</a><div class="ld">各类UI/UX相关网站黄页</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://so.uigreat.com/">So UIgreat导航</a><div class="ld">UI设计师网址导航</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://hao.uisdc.com/">设计师网址导航|SDC</a><div class="ld">SDC设计师网站导航</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://hao.shejidaren.com/">设计导航|设计达人</a><div class="ld">分享优秀设计网站</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://idesign.qq.com">设计导航|腾讯</a><div class="ld">云集高质量设计网站的内容</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.niudana.com/" >牛大拿设计师导航</a><div class="ld">设计师网站导航</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://wz.cndesign.com">CDN设计网址导航</a><div class="ld">优秀设计网站排名大全</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://creativemass.cn/#/">Creative Mass</a><div class="ld">精选创意导航</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.seeseed.com" title="Seeseed">Seeseed</a><div class="ld">无穷尽设计可能</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="http://www.qijishow.com/down/navigation.html">创意导航|奇迹秀</a><div class="ld">设计工具及各类辅助神器</div></div>
+                    <div class="navContentBox"><a class="ln" target="_blank" href="https://ailongmiao.com/design/">设计导航</a><div class="ld">龙喵网</div></div>
+                </div>
+            </div>
+            </div>
+        </main>
+        <script src="//at.alicdn.com/t/font_1656884_al80q9jea2.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+            <linearGradient id="my-cool-gradient" x2="1" y2="1">`
+              <stop offset="0%" stop-color=" #ff512f" />
+              <stop offset="100%" stop-color="#dd2476" />
+            </linearGradient>
+          </svg>
+    </body>
+</html>
